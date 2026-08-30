@@ -135,7 +135,7 @@ async def log_to_channel(text: str, reply_markup=None):
 
 def get_buy_now_keyboard():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🛒 Buy Now", url="https://t.me/swastiktgs_bot")]
+        [InlineKeyboardButton("🛒 Buy Now", url="https://t.me/OTPNUMBERSSBUYBOT")]
     ])
 
 def generate_upi_qr(upi_id: str, name: str, amount: float = None) -> io.BytesIO:
