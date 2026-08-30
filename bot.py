@@ -134,7 +134,7 @@ async def log_to_channel(text: str, reply_markup=None):
 
 def get_buy_now_keyboard():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🛒 Buy Now", url="https://t.me/swastiktgs_bot")]
+        [InlineKeyboardButton("🛒 Buy Now", url="https://t.me/OTPNUMBERSSBUYBOT")]
     ])
 
 def generate_upi_qr(upi_id: str, name: str, amount: float = None) -> io.BytesIO:
@@ -255,7 +255,7 @@ def get_main_menu_keyboard(user_id: int):
     buttons = [
         [InlineKeyboardButton("🛒 Buy Accounts", callback_data="user_buy_menu"), InlineKeyboardButton("💳 Deposit Money", callback_data="user_deposit_menu")],
         [InlineKeyboardButton("💸 Withdraw Cashback", callback_data="user_withdraw_menu")],
-        [InlineKeyboardButton("👤 Profile", callback_data="user_profile"), InlineKeyboardButton("👨‍💻 Support", url="https://t.me/PROOF_PAYMENTS12")]
+        [InlineKeyboardButton("👤 Profile", callback_data="user_profile"), InlineKeyboardButton("👨‍💻 Support", url="https://t.me/hubotpsupport")]
     ]
     if user_id in SUDO_USERS:
         buttons.append([InlineKeyboardButton("⚙️ Admin Dashboard", callback_data="admin_panel")])
